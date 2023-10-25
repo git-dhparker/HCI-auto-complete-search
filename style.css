@@ -1,0 +1,36 @@
+#searchInput {
+    width: 100%;
+    height: 25px;
+    border-radius: 50px;
+    border: solid 10px #eee;
+    padding: 30px;
+}
+
+#suggestions {
+    box-shadow: 1px 5px 5px 1px #ddd;
+    position: absolute;
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    z-index: 9;
+    width: 50%;
+    font-size: 0.8em;
+    text-transform: capitalize;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding-bottom: 10px;
+}
+
+/* Add these new CSS rules for suggestion list items */
+#suggestions div {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#suggestions div:last-child {
+    border-bottom: none;
+    /* Remove the border from the last suggestion item */
+}
